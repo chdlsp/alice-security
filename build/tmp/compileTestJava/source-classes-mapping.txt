@@ -1,0 +1,6 @@
+com/chdlsp/alice/AliceApplicationTests.java
+ com.chdlsp.alice.AliceApplicationTests
+com/chdlsp/alice/controller/UserControllerTests.java
+ com.chdlsp.alice.controller.UserControllerTests
+com/chdlsp/alice/service/UserServiceTests.java
+ com.chdlsp.alice.service.UserServiceTests
