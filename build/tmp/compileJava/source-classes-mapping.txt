@@ -1,0 +1,2 @@
+com/chdlsp/alice/AliceApplication.java
+ com.chdlsp.alice.AliceApplication
