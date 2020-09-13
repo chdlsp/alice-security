@@ -1,13 +1,33 @@
+com/chdlsp/alice/controller/SessionController.java
+ com.chdlsp.alice.controller.SessionController
+com/chdlsp/alice/interfaces/vo/SessionResponseVO.java
+ com.chdlsp.alice.interfaces.vo.SessionResponseVO
+ com.chdlsp.alice.interfaces.vo.SessionResponseVO$SessionResponseVOBuilder
+com/chdlsp/alice/interfaces/exception/PasswordWrongException.java
+ com.chdlsp.alice.interfaces.exception.PasswordWrongException
+com/chdlsp/alice/domain/repository/UserRepository.java
+ com.chdlsp.alice.domain.repository.UserRepository
+com/chdlsp/alice/interfaces/vo/SessionRequestVO.java
+ com.chdlsp.alice.interfaces.vo.SessionRequestVO
+ com.chdlsp.alice.interfaces.vo.SessionRequestVO$SessionRequestVOBuilder
+com/chdlsp/alice/interfaces/exception/EmailExistedException.java
+ com.chdlsp.alice.interfaces.exception.EmailExistedException
 com/chdlsp/alice/service/UserService.java
  com.chdlsp.alice.service.UserService
 com/chdlsp/alice/config/SecurityJavaConfig.java
  com.chdlsp.alice.config.SecurityJavaConfig
 com/chdlsp/alice/AliceApplication.java
  com.chdlsp.alice.AliceApplication
+com/chdlsp/alice/interfaces/util/JwtUtil.java
+ com.chdlsp.alice.interfaces.util.JwtUtil
+com/chdlsp/alice/interfaces/advice/SessionErrorAdvice.java
+ com.chdlsp.alice.interfaces.advice.SessionErrorAdvice
 com/chdlsp/alice/controller/UserController.java
  com.chdlsp.alice.controller.UserController
+com/chdlsp/alice/interfaces/advice/EmailExistedErrorAdvice.java
+ com.chdlsp.alice.interfaces.advice.EmailExistedErrorAdvice
+com/chdlsp/alice/interfaces/exception/EmailNotExistedException.java
+ com.chdlsp.alice.interfaces.exception.EmailNotExistedException
 com/chdlsp/alice/domain/entity/User.java
  com.chdlsp.alice.domain.entity.User
  com.chdlsp.alice.domain.entity.User$UserBuilder
-com/chdlsp/alice/domain/repository/UserRepository.java
- com.chdlsp.alice.domain.repository.UserRepository

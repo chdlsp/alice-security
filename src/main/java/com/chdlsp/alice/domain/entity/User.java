@@ -1,5 +1,6 @@
 package com.chdlsp.alice.domain.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.*;
 

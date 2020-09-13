@@ -2,32 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2582a687-0aed-4468-8945-835d1cff2798" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/config/SecurityJavaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/chdlsp/alice/controller/UserControllerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/chdlsp/alice/service/UserServiceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/controller/SessionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/advice/EmailExistedErrorAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/advice/SessionErrorAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/exception/EmailExistedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/exception/EmailNotExistedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/exception/PasswordWrongException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/vo/SessionRequestVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/vo/SessionResponseVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chdlsp/alice/controller/SessionControllerTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chdlsp/alice/domain/entity/UserTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/chdlsp/alice/interfaces/util/JwtUtilTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.chdlsp.alice.AliceApplicationTests.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.chdlsp.alice.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.chdlsp.alice.AliceApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/AliceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/AliceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/config/SecurityJavaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/config/SecurityJavaConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/chdlsp/alice/service/UserServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/chdlsp/alice/service/UserServiceTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +146,8 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/GitHub/fastcampus-eatgo" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -138,20 +158,27 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.chdlsp.alice.service" />
+      <recent name="com.chdlsp.alice.interfaces.util" />
+      <recent name="com.chdlsp.alice.domain.entity" />
       <recent name="com.chdlsp.alice.controller" />
+      <recent name="com.chdlsp.alice.service" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.chdlsp.alice.service" />
+      <recent name="com.chdlsp.alice.excpetion" />
+      <recent name="com.chdlsp.alice.interfaces.advice" />
+    </key>
   </component>
   <component name="RunManager" selected="Spring Boot.AliceApplication">
-    <configuration name="AliceApplicationTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="JwtUtilTests.createToken" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.AliceApplicationTests&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.interfaces.util.JwtUtilTests.createToken&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -166,12 +193,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserControllerTests.create" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="SessionControllerTests.createWithValidAttributes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.controller.UserControllerTests.create&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.controller.SessionControllerTests.createWithValidAttributes&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -186,12 +213,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserServiceTests.registerUser" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserServiceTests.authenticateWithNotExistedEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.service.UserServiceTests.registerUser&quot;" />
+        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.service.UserServiceTests.authenticateWithNotExistedEmail&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -206,42 +233,44 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="alice-security [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserServiceTests.authenticateWithWrongPassword" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.service.UserServiceTests.authenticateWithWrongPassword&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="assemble" />
+            <option value=":cleanTest" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="alice-security [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserTests.accessToken" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="--tests &quot;com.chdlsp.alice.domain.entity.UserTests.accessToken&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value=":cleanTest" />
+            <option value=":test" />
           </list>
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
     <configuration name="AliceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -253,11 +282,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.AliceApplicationTests" />
-        <item itemvalue="Gradle.UserServiceTests.registerUser" />
-        <item itemvalue="Gradle.UserControllerTests.create" />
-        <item itemvalue="Gradle.alice-security [assemble]" />
-        <item itemvalue="Gradle.alice-security [clean]" />
+        <item itemvalue="Gradle.JwtUtilTests.createToken" />
+        <item itemvalue="Gradle.SessionControllerTests.createWithValidAttributes" />
+        <item itemvalue="Gradle.UserTests.accessToken" />
+        <item itemvalue="Gradle.UserServiceTests.authenticateWithWrongPassword" />
+        <item itemvalue="Gradle.UserServiceTests.authenticateWithNotExistedEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +301,8 @@
       <option name="presentableId" value="Default" />
       <updated>1599824242862</updated>
       <workItem from="1599824248334" duration="2222000" />
-      <workItem from="1599827368715" duration="2244000" />
+      <workItem from="1599827368715" duration="12458000" />
+      <workItem from="1599957209615" duration="4205000" />
     </task>
     <servers />
   </component>
@@ -280,42 +310,74 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599828255707">
+    <state x="361" y="71" key="#Inspections" timestamp="1599964207552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599828255707" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599829663638">
+    <state x="361" y="71" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1599964207552" />
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser" timestamp="1599887183071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599829663638" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599829663638">
+    <state x="574" y="122" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599887183071" />
+    <state x="370" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1599883151313">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599829663638" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599829663637">
+    <state x="370" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1599883151313" />
+    <state x="560" y="271" width="453" height="332" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1599882928382">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599829663637" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599829663638">
+    <state x="560" y="271" width="453" height="332" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1599882928382" />
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1599885369316">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599829663638" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1599829663635">
+    <state x="486" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1599885369316" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599880372593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599829663635" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1599829663634">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599880372593" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1599900910789">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599829663634" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1599829663634">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599900910789" />
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1599964497575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599829663634" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1599829663635">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599964497575" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1599964497575">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599829663635" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599964497575" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1599964497575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599964497575" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1599964497575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599964497575" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1599964497576">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599964497576" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1599964497575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599964497575" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1599964497575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599964497575" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1599964497575">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599964497575" />
+    <state x="549" y="189" width="438" height="485" key="RefactorJ.WrapReturnValue" timestamp="1599886919467">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="189" width="438" height="485" key="RefactorJ.WrapReturnValue/0.0.1536.824@0.0.1536.824" timestamp="1599886919467" />
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt" timestamp="1599957608410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1599957608410" />
     <state x="571" y="190" key="chooseDestDirectoryDialog" timestamp="1599828831922">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -324,17 +386,21 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="459" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599827369764" />
-    <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599829313227">
+    <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1599962508352">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1599829313227" />
+    <state x="540" y="130" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1536.824@0.0.1536.824" timestamp="1599962508352" />
+    <state x="499" y="166" width="538" height="500" key="extract.method.dialog" timestamp="1599957604680">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="166" width="538" height="500" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1599957604680" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1599827489060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599827489060" />
-    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup" timestamp="1599828795139">
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1599957596593">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599828795139" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599957596593" />
   </component>
 </project>
