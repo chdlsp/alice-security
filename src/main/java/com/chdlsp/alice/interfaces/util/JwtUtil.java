@@ -1,5 +1,6 @@
 package com.chdlsp.alice.interfaces.util;
 
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
@@ -21,12 +22,18 @@ public class JwtUtil {
 
     public String createToken(Long userId, String userName) {
 
-        String token = Jwts.builder()
+        return Jwts.builder()
                 .claim("userId", userId)
                 .claim("userName", userName)
                 .signWith(key, SignatureAlgorithm.HS256)
                 .compact();
+    }
 
-        return token;
+    public Claims getClaims(String token) {
+
+        return Jwts.parser()
+                .setSigningKey(key)
+                .parseClaimsJws(token)
+                .getBody();
     }
 }

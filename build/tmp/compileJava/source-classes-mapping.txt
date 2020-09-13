@@ -7,6 +7,8 @@ com/chdlsp/alice/interfaces/exception/PasswordWrongException.java
  com.chdlsp.alice.interfaces.exception.PasswordWrongException
 com/chdlsp/alice/domain/repository/UserRepository.java
  com.chdlsp.alice.domain.repository.UserRepository
+com/chdlsp/alice/interfaces/filter/JwtAuthenticationFilter.java
+ com.chdlsp.alice.interfaces.filter.JwtAuthenticationFilter
 com/chdlsp/alice/interfaces/vo/SessionRequestVO.java
  com.chdlsp.alice.interfaces.vo.SessionRequestVO
  com.chdlsp.alice.interfaces.vo.SessionRequestVO$SessionRequestVOBuilder

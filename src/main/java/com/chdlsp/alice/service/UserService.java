@@ -59,6 +59,6 @@ public class UserService {
             throw new PasswordWrongException();
         }
 
-        return null;
+        return user;
     }
 }
