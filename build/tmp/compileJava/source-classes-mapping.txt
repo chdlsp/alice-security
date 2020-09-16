@@ -1,5 +1,14 @@
+com/chdlsp/alice/interfaces/vo/AuthTokenRequestVO.java
+ com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO
+ com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO$AuthTokenRequestVOBuilder
+com/chdlsp/alice/controller/KakaoAuthApiController.java
+ com.chdlsp.alice.controller.KakaoAuthApiController
 com/chdlsp/alice/controller/SessionController.java
  com.chdlsp.alice.controller.SessionController
+com/chdlsp/alice/domain/entity/UserLoginHistory.java
+ com.chdlsp.alice.domain.entity.UserLoginHistory
+com/chdlsp/alice/controller/LoginController.java
+ com.chdlsp.alice.controller.LoginController
 com/chdlsp/alice/interfaces/vo/SessionResponseVO.java
  com.chdlsp.alice.interfaces.vo.SessionResponseVO
  com.chdlsp.alice.interfaces.vo.SessionResponseVO$SessionResponseVOBuilder
@@ -30,6 +39,15 @@ com/chdlsp/alice/interfaces/advice/EmailExistedErrorAdvice.java
  com.chdlsp.alice.interfaces.advice.EmailExistedErrorAdvice
 com/chdlsp/alice/interfaces/exception/EmailNotExistedException.java
  com.chdlsp.alice.interfaces.exception.EmailNotExistedException
+com/chdlsp/alice/interfaces/vo/AuthTokenResponseVO.java
+ com.chdlsp.alice.interfaces.vo.AuthTokenResponseVO
+ com.chdlsp.alice.interfaces.vo.AuthTokenResponseVO$AuthTokenResponseVOBuilder
 com/chdlsp/alice/domain/entity/User.java
  com.chdlsp.alice.domain.entity.User
  com.chdlsp.alice.domain.entity.User$UserBuilder
+com/chdlsp/alice/interfaces/enums/PropertyKeyEnum.java
+ com.chdlsp.alice.interfaces.enums.PropertyKeyEnum
+com/chdlsp/alice/interfaces/exception/AccessTokenProcessException.java
+ com.chdlsp.alice.interfaces.exception.AccessTokenProcessException
+com/chdlsp/alice/config/SocialApiConfig.java
+ com.chdlsp.alice.config.SocialApiConfig

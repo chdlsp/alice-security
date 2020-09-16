@@ -29,4 +29,8 @@ public class User {
 
     private String password;
 
+    //    // UserLoginHistory N : 1 User
+    //    @ManyToOne
+    //    private User user;
+
 }

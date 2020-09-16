@@ -1,0 +1,23 @@
+{
+  "properties": [
+    {
+      "name": "kakao.oauth.login.redirectUrl",
+      "type": "java.lang.String",
+      "description": "Description for kakao.oauth.login.redirectUrl."
+    },
+    {
+      "name": "kakao.oauth.appKey",
+      "type": "java.lang.String",
+      "description": "Description for kakao.oauth.appKey."
+    },
+    {
+      "name": "jwt.secret",
+      "type": "java.lang.String",
+      "description": "Description for jwt.secret."
+    },
+    {
+      "name": "kakao.oauth.clientSecret",
+      "type": "java.lang.String",
+      "description": "Description for kakao.oauth.clientSecret."
+    }
+  ] }

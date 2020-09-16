@@ -28,6 +28,13 @@ public class SecurityJavaConfig extends WebSecurityConfigurerAdapter {
                 authenticationManager(), jwtUtil());
 
         http
+//                // oauth2 인증 관련 처리
+//                .authorizeRequests()
+//                .antMatchers("/oauth2/**").permitAll()
+//                .anyRequest().authenticated()
+//                .and()
+//                .oauth2Login()
+//                .and()
                 // api server 에서 불필요한 options disable 처리
                 .formLogin().disable()
                 .csrf().disable()
