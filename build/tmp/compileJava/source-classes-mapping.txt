@@ -1,14 +1,5 @@
-com/chdlsp/alice/interfaces/vo/AuthTokenRequestVO.java
- com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO
- com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO$AuthTokenRequestVOBuilder
-com/chdlsp/alice/controller/KakaoAuthApiController.java
- com.chdlsp.alice.controller.KakaoAuthApiController
-com/chdlsp/alice/controller/SessionController.java
- com.chdlsp.alice.controller.SessionController
-com/chdlsp/alice/domain/entity/UserLoginHistory.java
- com.chdlsp.alice.domain.entity.UserLoginHistory
-com/chdlsp/alice/controller/LoginController.java
- com.chdlsp.alice.controller.LoginController
+com/chdlsp/alice/interfaces/exception/GetKakaoUserInfoProcessException.java
+ com.chdlsp.alice.interfaces.exception.GetKakaoUserInfoProcessException
 com/chdlsp/alice/interfaces/vo/SessionResponseVO.java
  com.chdlsp.alice.interfaces.vo.SessionResponseVO
  com.chdlsp.alice.interfaces.vo.SessionResponseVO$SessionResponseVOBuilder
@@ -18,33 +9,57 @@ com/chdlsp/alice/domain/repository/UserRepository.java
  com.chdlsp.alice.domain.repository.UserRepository
 com/chdlsp/alice/interfaces/filter/JwtAuthenticationFilter.java
  com.chdlsp.alice.interfaces.filter.JwtAuthenticationFilter
-com/chdlsp/alice/interfaces/vo/SessionRequestVO.java
- com.chdlsp.alice.interfaces.vo.SessionRequestVO
- com.chdlsp.alice.interfaces.vo.SessionRequestVO$SessionRequestVOBuilder
 com/chdlsp/alice/interfaces/exception/EmailExistedException.java
  com.chdlsp.alice.interfaces.exception.EmailExistedException
 com/chdlsp/alice/service/UserService.java
  com.chdlsp.alice.service.UserService
-com/chdlsp/alice/config/SecurityJavaConfig.java
- com.chdlsp.alice.config.SecurityJavaConfig
-com/chdlsp/alice/AliceApplication.java
- com.chdlsp.alice.AliceApplication
+com/chdlsp/alice/interfaces/vo/KakaoUserInfoVO.java
+ com.chdlsp.alice.interfaces.vo.KakaoUserInfoVO
+ com.chdlsp.alice.interfaces.vo.KakaoUserInfoVO$KakaoUserInfoVOBuilder
+com/chdlsp/alice/config/FileUploadConfig.java
+ com.chdlsp.alice.config.FileUploadConfig
 com/chdlsp/alice/interfaces/util/JwtUtil.java
  com.chdlsp.alice.interfaces.util.JwtUtil
-com/chdlsp/alice/interfaces/advice/SessionErrorAdvice.java
- com.chdlsp.alice.interfaces.advice.SessionErrorAdvice
 com/chdlsp/alice/controller/UserController.java
  com.chdlsp.alice.controller.UserController
-com/chdlsp/alice/interfaces/advice/EmailExistedErrorAdvice.java
- com.chdlsp.alice.interfaces.advice.EmailExistedErrorAdvice
 com/chdlsp/alice/interfaces/exception/EmailNotExistedException.java
  com.chdlsp.alice.interfaces.exception.EmailNotExistedException
 com/chdlsp/alice/interfaces/vo/AuthTokenResponseVO.java
  com.chdlsp.alice.interfaces.vo.AuthTokenResponseVO
  com.chdlsp.alice.interfaces.vo.AuthTokenResponseVO$AuthTokenResponseVOBuilder
+com/chdlsp/alice/interfaces/exception/StorageFileNotFoundException.java
+ com.chdlsp.alice.interfaces.exception.StorageFileNotFoundException
+com/chdlsp/alice/interfaces/exception/StorageException.java
+ com.chdlsp.alice.interfaces.exception.StorageException
 com/chdlsp/alice/domain/entity/User.java
  com.chdlsp.alice.domain.entity.User
  com.chdlsp.alice.domain.entity.User$UserBuilder
+com/chdlsp/alice/interfaces/vo/AuthTokenRequestVO.java
+ com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO
+ com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO$AuthTokenRequestVOBuilder
+com/chdlsp/alice/service/FileUploadService.java
+ com.chdlsp.alice.service.FileUploadService
+com/chdlsp/alice/controller/SessionController.java
+ com.chdlsp.alice.controller.SessionController
+com/chdlsp/alice/domain/entity/UserLoginHistory.java
+ com.chdlsp.alice.domain.entity.UserLoginHistory
+com/chdlsp/alice/controller/LoginController.java
+ com.chdlsp.alice.controller.LoginController
+com/chdlsp/alice/service/KakaoAuthApiService.java
+ com.chdlsp.alice.service.KakaoAuthApiService
+com/chdlsp/alice/interfaces/vo/SessionRequestVO.java
+ com.chdlsp.alice.interfaces.vo.SessionRequestVO
+ com.chdlsp.alice.interfaces.vo.SessionRequestVO$SessionRequestVOBuilder
+com/chdlsp/alice/config/SecurityJavaConfig.java
+ com.chdlsp.alice.config.SecurityJavaConfig
+com/chdlsp/alice/AliceApplication.java
+ com.chdlsp.alice.AliceApplication
+com/chdlsp/alice/interfaces/advice/SessionErrorAdvice.java
+ com.chdlsp.alice.interfaces.advice.SessionErrorAdvice
+com/chdlsp/alice/interfaces/advice/EmailExistedErrorAdvice.java
+ com.chdlsp.alice.interfaces.advice.EmailExistedErrorAdvice
+com/chdlsp/alice/controller/FileUploadController.java
+ com.chdlsp.alice.controller.FileUploadController
 com/chdlsp/alice/interfaces/enums/PropertyKeyEnum.java
  com.chdlsp.alice.interfaces.enums.PropertyKeyEnum
 com/chdlsp/alice/interfaces/exception/AccessTokenProcessException.java

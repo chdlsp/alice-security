@@ -1,5 +1,11 @@
 {
-  "groups": [],
+  "groups": [
+    {
+      "name": "storage",
+      "type": "com.chdlsp.alice.config.FileUploadConfig",
+      "sourceType": "com.chdlsp.alice.config.FileUploadConfig"
+    }
+  ],
   "properties": [
     {
       "name": "jwt.secret",
@@ -20,6 +26,13 @@
       "name": "kakao.oauth.login.redirectUrl",
       "type": "java.lang.String",
       "description": "Description for kakao.oauth.login.redirectUrl."
+    },
+    {
+      "name": "storage.location",
+      "type": "java.lang.String",
+      "description": "Folder location for storing files",
+      "sourceType": "com.chdlsp.alice.config.FileUploadConfig",
+      "defaultValue": "upload-dir"
     }
   ],
   "hints": []
