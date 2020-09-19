@@ -8,5 +8,7 @@ import lombok.*;
 @Data
 public class KakaoUserInfoVO {
 
+    String id;
     String email;
+    String nickname;
 }

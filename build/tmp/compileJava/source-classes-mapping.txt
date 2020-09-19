@@ -39,10 +39,13 @@ com/chdlsp/alice/interfaces/vo/AuthTokenRequestVO.java
  com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO$AuthTokenRequestVOBuilder
 com/chdlsp/alice/service/FileUploadService.java
  com.chdlsp.alice.service.FileUploadService
-com/chdlsp/alice/controller/SessionController.java
- com.chdlsp.alice.controller.SessionController
+com/chdlsp/alice/domain/repository/UserLoginHistoryRepository.java
+ com.chdlsp.alice.domain.repository.UserLoginHistoryRepository
 com/chdlsp/alice/domain/entity/UserLoginHistory.java
  com.chdlsp.alice.domain.entity.UserLoginHistory
+ com.chdlsp.alice.domain.entity.UserLoginHistory$UserLoginHistoryBuilder
+com/chdlsp/alice/controller/SessionController.java
+ com.chdlsp.alice.controller.SessionController
 com/chdlsp/alice/controller/LoginController.java
  com.chdlsp.alice.controller.LoginController
 com/chdlsp/alice/service/KakaoAuthApiService.java

@@ -32,7 +32,7 @@
       "type": "java.lang.String",
       "description": "Folder location for storing files",
       "sourceType": "com.chdlsp.alice.config.FileUploadConfig",
-      "defaultValue": "upload-dir"
+      "defaultValue": "C:\\UploadFiles\\"
     }
   ],
   "hints": []

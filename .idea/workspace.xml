@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2582a687-0aed-4468-8945-835d1cff2798" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/exception/GetKakaoUserInfoProcessException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/vo/KakaoUserInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/repository/UserLoginHistoryRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.6.1/fileHashes/fileHashes.bin" afterDir="false" />
@@ -17,14 +15,22 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/uploadForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/uploadForm.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/source-classes-mapping.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileTestJava/source-classes-mapping.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/controller/FileUploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/controller/FileUploadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/controller/KakaoAuthApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/AliceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/AliceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/config/FileUploadConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/config/FileUploadConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/entity/UserLoginHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/domain/entity/UserLoginHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/vo/KakaoUserInfoVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/interfaces/vo/KakaoUserInfoVO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/service/KakaoAuthApiService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/service/KakaoAuthApiService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chdlsp/alice/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/hello.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/uploadForm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +156,7 @@
       <recent name="com.chdlsp.alice.interfaces.advice" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.chdlsp.alice.domain.repository" />
       <recent name="com.chdlsp.alice.interfaces.exception" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -293,7 +300,7 @@
       <workItem from="1599957209615" duration="25165000" />
       <workItem from="1600090286814" duration="2765000" />
       <workItem from="1600242733421" duration="746000" />
-      <workItem from="1600243576807" duration="16662000" />
+      <workItem from="1600243576807" duration="29077000" />
     </task>
     <servers />
   </component>
@@ -329,38 +336,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600176523218" />
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1600441223372">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1600492623987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600441223372" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1600441223371">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600492623987" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1600492623987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600441223371" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1600441223371">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600492623987" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1600492623987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600441223371" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1600441223372">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600492623987" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1600492623987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600441223372" />
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1600441223372">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600492623987" />
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom" timestamp="1600492623988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600441223372" />
-    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1600441223372">
+    <state width="1493" height="210" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600492623988" />
+    <state width="1493" height="210" key="GridCell.Tab.1.center" timestamp="1600492623987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600441223372" />
-    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1600441223372">
+    <state width="1493" height="210" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600492623987" />
+    <state width="1493" height="210" key="GridCell.Tab.1.left" timestamp="1600492623987">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600441223372" />
-    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1600441223372">
+    <state width="1493" height="210" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600492623987" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right" timestamp="1600492623988">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600441223372" />
+    <state width="1493" height="210" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600492623988" />
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom" timestamp="1600491796483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600491796483" />
+    <state width="1493" height="261" key="GridCell.Tab.2.center" timestamp="1600491796483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1600491796483" />
+    <state width="1493" height="261" key="GridCell.Tab.2.left" timestamp="1600491796483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1600491796482" />
+    <state width="1493" height="261" key="GridCell.Tab.2.right" timestamp="1600491796483">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1600491796483" />
     <state x="549" y="189" width="438" height="485" key="RefactorJ.WrapReturnValue" timestamp="1599886919467">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -385,10 +408,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="166" width="538" height="500" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1599957604680" />
-    <state x="460" y="143" width="616" height="538" key="find.popup" timestamp="1599997261644">
+    <state x="460" y="143" width="616" height="538" key="find.popup" timestamp="1600491341349">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="460" y="143" width="616" height="538" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1599997261644" />
+    <state x="460" y="143" width="616" height="538" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600491341349" />
     <state x="474" y="30" key="refactoring.ChangeSignatureDialog" timestamp="1599983557933">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -397,9 +420,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1599997334717" />
-    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1600439194223">
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup" timestamp="1600489606782">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600439194223" />
+    <state x="425" y="66" width="672" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1600489606782" />
   </component>
 </project>

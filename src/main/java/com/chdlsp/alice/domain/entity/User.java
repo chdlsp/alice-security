@@ -3,16 +3,20 @@ package com.chdlsp.alice.domain.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Getter
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@EntityListeners(AuditingEntityListener.class)
 public class User {
 
     @Id
@@ -27,10 +31,15 @@ public class User {
     @NotNull
     private String name;
 
+    // TODO: 추후 구현
     private String password;
 
-    //    // UserLoginHistory N : 1 User
-    //    @ManyToOne
-    //    private User user;
+    @CreatedDate
+    private LocalDateTime createdAt;
 
+    @LastModifiedDate
+    private LocalDateTime updatedAt;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private List<UserLoginHistory> userLoginHistory;
 }

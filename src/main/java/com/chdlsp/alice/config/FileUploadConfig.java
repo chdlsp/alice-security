@@ -9,7 +9,7 @@ public class FileUploadConfig {
     /**
      * Folder location for storing files
      */
-    private String location = "upload-dir";
+    private String location = "C:\\UploadFiles\\";
 
     public String getLocation() {
         return location;

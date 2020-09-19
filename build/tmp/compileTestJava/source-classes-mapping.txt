@@ -4,11 +4,11 @@ com/chdlsp/alice/AliceApplicationTests.java
  com.chdlsp.alice.AliceApplicationTests
 com/chdlsp/alice/etc/UtilTests.java
  com.chdlsp.alice.etc.UtilTests
-com/chdlsp/alice/domain/entity/UserTests.java
- com.chdlsp.alice.domain.entity.UserTests
 com/chdlsp/alice/controller/UserControllerTests.java
  com.chdlsp.alice.controller.UserControllerTests
 com/chdlsp/alice/service/UserServiceTests.java
  com.chdlsp.alice.service.UserServiceTests
 com/chdlsp/alice/controller/SessionControllerTests.java
  com.chdlsp.alice.controller.SessionControllerTests
+com/chdlsp/alice/domain/entity/UserTests.java
+ com.chdlsp.alice.domain.entity.UserTests
