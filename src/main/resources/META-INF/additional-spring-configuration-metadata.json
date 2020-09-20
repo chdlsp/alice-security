@@ -19,5 +19,10 @@
       "name": "kakao.oauth.clientSecret",
       "type": "java.lang.String",
       "description": "Description for kakao.oauth.clientSecret."
+    },
+    {
+      "name": "server.session.tracking-modes",
+      "type": "java.lang.String",
+      "description": "Description for server.session.tracking-modes."
     }
   ] }

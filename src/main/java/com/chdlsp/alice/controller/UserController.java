@@ -1,6 +1,6 @@
 package com.chdlsp.alice.controller;
 
-import com.chdlsp.alice.domain.entity.User;
+import com.chdlsp.alice.domain.entity.UserEntity;
 import com.chdlsp.alice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,16 +19,16 @@ public class UserController {
 
     @PostMapping("/users")
     public ResponseEntity create(
-            @RequestBody User resource
+            @RequestBody UserEntity resource
     ) throws URISyntaxException {
 
         String email = resource.getEmail();
         String name = resource.getName();
         String password = resource.getPassword();
 
-        User user = userService.registerUser(email, name, password);
+        UserEntity userEntity = userService.registerUser(email, name, password);
 
-        String url = "/users/" + user.getId();
+        String url = "/users/" + userEntity.getId();
         return ResponseEntity.created(new URI(url)).body("{}");
     }
 }

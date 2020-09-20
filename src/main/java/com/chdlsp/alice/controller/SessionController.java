@@ -1,6 +1,6 @@
 package com.chdlsp.alice.controller;
 
-import com.chdlsp.alice.domain.entity.User;
+import com.chdlsp.alice.domain.entity.UserEntity;
 import com.chdlsp.alice.interfaces.util.JwtUtil;
 import com.chdlsp.alice.interfaces.vo.SessionResponseVO;
 import com.chdlsp.alice.interfaces.vo.SessionRequestVO;
@@ -33,9 +33,9 @@ public class SessionController {
         String email = resource.getEmail();
         String password = resource.getPassword();
 
-        User user = userService.authenticate(email, password);
+        UserEntity userEntity = userService.authenticate(email, password);
 
-        String accessToken = jwtUtil.createToken(user.getId(), user.getName());
+        String accessToken = jwtUtil.createToken(userEntity.getId(), userEntity.getName());
 
         SessionResponseVO sessionResponseVO = SessionResponseVO.builder()
                 .accessToken(accessToken)

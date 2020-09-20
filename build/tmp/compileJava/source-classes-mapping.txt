@@ -1,5 +1,16 @@
+com/chdlsp/alice/domain/entity/ImageUploadEntity.java
+ com.chdlsp.alice.domain.entity.ImageUploadEntity
+ com.chdlsp.alice.domain.entity.ImageUploadEntity$ImageUploadEntityBuilder
+com/chdlsp/alice/domain/repository/ImageUploadRepository.java
+ com.chdlsp.alice.domain.repository.ImageUploadRepository
+com/chdlsp/alice/domain/entity/UserLoginHistoryEntity.java
+ com.chdlsp.alice.domain.entity.UserLoginHistoryEntity
+ com.chdlsp.alice.domain.entity.UserLoginHistoryEntity$UserLoginHistoryEntityBuilder
 com/chdlsp/alice/interfaces/exception/GetKakaoUserInfoProcessException.java
  com.chdlsp.alice.interfaces.exception.GetKakaoUserInfoProcessException
+com/chdlsp/alice/domain/entity/UserEntity.java
+ com.chdlsp.alice.domain.entity.UserEntity
+ com.chdlsp.alice.domain.entity.UserEntity$UserEntityBuilder
 com/chdlsp/alice/interfaces/vo/SessionResponseVO.java
  com.chdlsp.alice.interfaces.vo.SessionResponseVO
  com.chdlsp.alice.interfaces.vo.SessionResponseVO$SessionResponseVOBuilder
@@ -31,9 +42,6 @@ com/chdlsp/alice/interfaces/exception/StorageFileNotFoundException.java
  com.chdlsp.alice.interfaces.exception.StorageFileNotFoundException
 com/chdlsp/alice/interfaces/exception/StorageException.java
  com.chdlsp.alice.interfaces.exception.StorageException
-com/chdlsp/alice/domain/entity/User.java
- com.chdlsp.alice.domain.entity.User
- com.chdlsp.alice.domain.entity.User$UserBuilder
 com/chdlsp/alice/interfaces/vo/AuthTokenRequestVO.java
  com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO
  com.chdlsp.alice.interfaces.vo.AuthTokenRequestVO$AuthTokenRequestVOBuilder
@@ -41,9 +49,6 @@ com/chdlsp/alice/service/FileUploadService.java
  com.chdlsp.alice.service.FileUploadService
 com/chdlsp/alice/domain/repository/UserLoginHistoryRepository.java
  com.chdlsp.alice.domain.repository.UserLoginHistoryRepository
-com/chdlsp/alice/domain/entity/UserLoginHistory.java
- com.chdlsp.alice.domain.entity.UserLoginHistory
- com.chdlsp.alice.domain.entity.UserLoginHistory$UserLoginHistoryBuilder
 com/chdlsp/alice/controller/SessionController.java
  com.chdlsp.alice.controller.SessionController
 com/chdlsp/alice/controller/LoginController.java

@@ -1,7 +1,7 @@
 package com.chdlsp.alice.controller;
 
 import com.chdlsp.alice.config.SocialApiConfig;
-import com.chdlsp.alice.domain.entity.UserLoginHistory;
+import com.chdlsp.alice.domain.entity.UserLoginHistoryEntity;
 import com.chdlsp.alice.interfaces.vo.KakaoUserInfoVO;
 import com.chdlsp.alice.service.KakaoAuthApiService;
 import com.chdlsp.alice.service.UserService;
@@ -10,12 +10,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
-import javax.swing.text.html.Option;
-import java.util.Optional;
 
 @Controller
 @Slf4j
@@ -55,10 +52,10 @@ public class LoginController {
     @GetMapping("/logout")
     public String logout(HttpSession session) {
 
-        log.info("logout info : " + session.getAttributeNames());
+        log.info("access_Token : " + session.getAttribute("access_Token"));
 
         // Kakao 로그아웃 수행
-        kakaoAuthApiService.doKakaoLogout((String)session.getAttribute("access_Token"));
+        kakaoAuthApiService.doKakaoLogout((String) session.getAttribute("access_Token"));
 
         log.info("logout info : " + (Long) session.getAttribute("login_history_id"));
 
@@ -68,7 +65,7 @@ public class LoginController {
         session.removeAttribute("access_Token");
         session.removeAttribute("email");
 
-        return "login";
+        return "redirect:/";
     }
 
     @GetMapping({"/loginSuccess", "/hello"})
@@ -110,10 +107,12 @@ public class LoginController {
         session.setAttribute("access_Token", accessToken);
 
         // 로그인 이력 적재
-        UserLoginHistory userLoginHistory = userService.registerUserLoginInfo(email);
-        session.setAttribute("login_history_id", userLoginHistory.getId());
+        UserLoginHistoryEntity userLoginHistoryEntity = userService.registerUserLoginInfo(email);
+        session.setAttribute("login_history_id", userLoginHistoryEntity.getId());
 
         log.info("session : " + session.getAttribute("email"));
+        log.info("session : " + session.getAttribute("access_Token"));
+
 
         return "hello";
     }

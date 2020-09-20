@@ -1,13 +1,12 @@
 package com.chdlsp.alice.service;
 
-import com.chdlsp.alice.domain.entity.User;
-import com.chdlsp.alice.domain.entity.UserLoginHistory;
+import com.chdlsp.alice.domain.entity.UserEntity;
+import com.chdlsp.alice.domain.entity.UserLoginHistoryEntity;
 import com.chdlsp.alice.domain.repository.UserLoginHistoryRepository;
 import com.chdlsp.alice.domain.repository.UserRepository;
 import com.chdlsp.alice.interfaces.exception.EmailExistedException;
 import com.chdlsp.alice.interfaces.exception.EmailNotExistedException;
 import com.chdlsp.alice.interfaces.exception.PasswordWrongException;
-import jdk.vm.ci.meta.Local;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -37,9 +36,9 @@ public class UserService {
     }
 
     // 회원가입 처리
-    public User registerUser(String email, String name, String password) {
+    public UserEntity registerUser(String email, String name, String password) {
 
-        Optional<User> optionalUser = userRepository.findByEmail(email);
+        Optional<UserEntity> optionalUser = userRepository.findByEmail(email);
 
         if(optionalUser.isPresent()) {
             throw new EmailExistedException(email);
@@ -48,54 +47,54 @@ public class UserService {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String encodedPassword = passwordEncoder.encode(password);
 
-        User user = User.builder()
+        UserEntity userEntity = UserEntity.builder()
                 .email(email)
                 .name(name)
                 .password(encodedPassword)
                 .createdAt(LocalDateTime.now())
                 .build();
 
-        return userRepository.save(user);
+        return userRepository.save(userEntity);
 
     }
 
     // 로그인 이력 등록
-    public UserLoginHistory registerUserLoginInfo(String email) {
+    public UserLoginHistoryEntity registerUserLoginInfo(String email) {
 
-        UserLoginHistory userLoginHistory = UserLoginHistory.builder()
+        UserLoginHistoryEntity userLoginHistoryEntity = UserLoginHistoryEntity.builder()
                 .email(email)
                 .createdAt(LocalDateTime.now())
                 .build();
 
-        return userLoginHistoryRepository.save(userLoginHistory);
+        return userLoginHistoryRepository.save(userLoginHistoryEntity);
 
     }
 
     // 로그아웃 수행
     public void registerUserLogoutInfo(Long id) {
 
-        UserLoginHistory userLoginHistory = UserLoginHistory.builder()
-                .id(id)
-                .loggedOutAt(LocalDateTime.now())
-                .build();
+        Optional<UserLoginHistoryEntity> selectUserLoginHistory = userLoginHistoryRepository.findById(id);
 
-        log.info("userLoginHistory : " + userLoginHistory);
-        userLoginHistoryRepository.save(userLoginHistory);
+        selectUserLoginHistory.ifPresent(loginInfo -> {
+            loginInfo.setLoggedOutAt(LocalDateTime.now());
+            userLoginHistoryRepository.save(loginInfo);
+        });
 
+        log.info("userLoginHistory : " + selectUserLoginHistory);
     }
 
-    public User authenticate(String email, String password) {
+    public UserEntity authenticate(String email, String password) {
 
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
-        User user = userRepository.findByEmail(email)
+        UserEntity userEntity = userRepository.findByEmail(email)
                 .orElseThrow(() -> new EmailNotExistedException());
 
-        if(!passwordEncoder.matches(password, user.getPassword())) {
+        if(!passwordEncoder.matches(password, userEntity.getPassword())) {
             throw new PasswordWrongException();
         }
 
-        return user;
+        return userEntity;
     }
 
 }

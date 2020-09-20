@@ -28,6 +28,11 @@
       "description": "Description for kakao.oauth.login.redirectUrl."
     },
     {
+      "name": "server.session.tracking-modes",
+      "type": "java.lang.String",
+      "description": "Description for server.session.tracking-modes."
+    },
+    {
       "name": "storage.location",
       "type": "java.lang.String",
       "description": "Folder location for storing files",

@@ -1,7 +1,7 @@
 package com.chdlsp.alice.service;
 
 import com.chdlsp.alice.config.SocialApiConfig;
-import com.chdlsp.alice.domain.entity.User;
+import com.chdlsp.alice.domain.entity.UserEntity;
 import com.chdlsp.alice.domain.repository.UserRepository;
 import com.chdlsp.alice.interfaces.enums.PropertyKeyEnum;
 import com.chdlsp.alice.interfaces.exception.AccessTokenProcessException;
@@ -15,7 +15,6 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
@@ -24,13 +23,6 @@ import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 import org.thymeleaf.util.StringUtils;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.Objects;
 import java.util.Optional;
@@ -180,7 +172,7 @@ public class KakaoAuthApiService {
     // 기회원 여부 확인
     public boolean isExistedUser(String email) {
 
-        Optional<User> userInfo = userRepository.findByEmail(email);
+        Optional<UserEntity> userInfo = userRepository.findByEmail(email);
 
         if(userInfo.isPresent()) {
             return true;

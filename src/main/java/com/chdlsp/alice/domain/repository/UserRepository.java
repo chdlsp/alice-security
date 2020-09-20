@@ -1,14 +1,14 @@
 package com.chdlsp.alice.domain.repository;
 
-import com.chdlsp.alice.domain.entity.User;
+import com.chdlsp.alice.domain.entity.UserEntity;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 import java.util.Optional;
 
-public interface UserRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends CrudRepository<UserEntity, Long> {
 
-    List<User> findAll();
-    Optional<User> findById(Long id);
-    Optional<User> findByEmail(String email);
+    List<UserEntity> findAll();
+    Optional<UserEntity> findById(Long id);
+    Optional<UserEntity> findByEmail(String email);
 }

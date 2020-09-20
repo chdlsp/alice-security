@@ -1,6 +1,6 @@
 package com.chdlsp.alice.controller;
 
-import com.chdlsp.alice.domain.entity.User;
+import com.chdlsp.alice.domain.entity.UserEntity;
 import com.chdlsp.alice.interfaces.exception.EmailNotExistedException;
 import com.chdlsp.alice.interfaces.exception.PasswordWrongException;
 import com.chdlsp.alice.interfaces.util.JwtUtil;
@@ -17,7 +17,6 @@ import org.springframework.test.web.servlet.MockMvc;
 import static org.mockito.ArgumentMatchers.contains;
 import static org.mockito.ArgumentMatchers.eq;
 
-import static org.junit.Assert.*;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -44,9 +43,9 @@ public class SessionControllerTests {
         String name = "tester";
         String password = "test";
 
-        User mockUser = User.builder().password("ACCESSTOKEN").build();
+        UserEntity mockUserEntity = UserEntity.builder().password("ACCESSTOKEN").build();
 
-        given(userService.authenticate(email, password)).willReturn(mockUser);
+        given(userService.authenticate(email, password)).willReturn(mockUserEntity);
 
         given(jwtUtil.createToken(id, name)).willReturn("header.payload.signature");
 
