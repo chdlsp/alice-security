@@ -55,7 +55,8 @@ public class FileUploadController {
 
         String email = (String) session.getAttribute("email");
 
-        fileUploadService.store(file, email); // 파일 저장
+        // 파일 저장
+        fileUploadService.store(file, email);
         redirectAttributes.addFlashAttribute("message",
                 "You successfully uploaded " + file.getOriginalFilename() + "!");
 

@@ -9,6 +9,28 @@
         <a th:href="@{/logout/}">로그아웃</a>
         <a th:href="@{/files/}">이미지 업로드 하기</a>
 
+        <div>
+            <h3> <span th:text="${email}"> </span> 로그인 이력 </h3>
+        </div>
+
+        <div>
+            <table id="userLoginTable">
+                <thead>
+                <tr>
+                    <th>Email</th>
+                    <th>Login</th>
+                    <th>Logout</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="loginInfo : ${userLoginHistory}">
+                    <td th:text="${loginInfo.email}">emil</td>
+                    <td th:text="${loginInfo.createdAt}">name</td>
+                    <td th:text="${loginInfo.loggedOutAt}">stat</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     </body>
 
 </html>

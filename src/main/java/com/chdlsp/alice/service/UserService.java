@@ -15,6 +15,8 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -24,6 +26,7 @@ public class UserService {
 
     UserRepository userRepository;
     UserLoginHistoryRepository userLoginHistoryRepository;
+
     PasswordEncoder passwordEncoder;
 
     @Autowired
@@ -61,10 +64,17 @@ public class UserService {
     // 로그인 이력 등록
     public UserLoginHistoryEntity registerUserLoginInfo(String email) {
 
+        // email 로 userEntity 의 id 찾기
+        Optional<UserEntity> userByEmail = userRepository.findByEmail(email);
+
         UserLoginHistoryEntity userLoginHistoryEntity = UserLoginHistoryEntity.builder()
                 .email(email)
                 .createdAt(LocalDateTime.now())
                 .build();
+
+        userByEmail.ifPresent(user -> {
+            userLoginHistoryEntity.setUserEntity(userRepository.getOne(user.getId()));
+        });
 
         return userLoginHistoryRepository.save(userLoginHistoryEntity);
 
@@ -88,7 +98,7 @@ public class UserService {
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
         UserEntity userEntity = userRepository.findByEmail(email)
-                .orElseThrow(() -> new EmailNotExistedException());
+                .orElseThrow(EmailNotExistedException::new);
 
         if(!passwordEncoder.matches(password, userEntity.getPassword())) {
             throw new PasswordWrongException();
@@ -97,4 +107,17 @@ public class UserService {
         return userEntity;
     }
 
+    // 로그인 이력 불러오기
+    public List<UserLoginHistoryEntity> getUserLoginHistoryInfo(String email) {
+
+        // email 로 userEntity 의 id 찾기
+        Optional<UserEntity> userByEmail = userRepository.findByEmail(email);
+        List<UserLoginHistoryEntity> userLoginHistoryList = new ArrayList<>();
+
+        if(userByEmail.isPresent()) {
+            userLoginHistoryList = userLoginHistoryRepository.findByUserEntity(userByEmail.get());
+        }
+
+        return userLoginHistoryList;
+    }
 }

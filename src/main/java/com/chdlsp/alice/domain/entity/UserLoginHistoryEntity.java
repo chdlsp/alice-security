@@ -37,5 +37,8 @@ public class UserLoginHistoryEntity {
 
     // userLoginHistory N : 1 user
     @ManyToOne
+    @Setter
     private UserEntity userEntity;
+
+
 }

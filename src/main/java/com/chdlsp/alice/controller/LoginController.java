@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
 @Controller
 @Slf4j
@@ -79,7 +80,9 @@ public class LoginController {
     }
 
     @GetMapping(value = "/oauth2/token", produces = "application/json")
-    public String loginWithUserEmail(@RequestParam("code") String code, HttpSession session) {
+    public String loginWithUserEmail(@RequestParam("code") String code,
+                                     HttpSession session,
+                                     Model model) {
 
         // code 를 이용해 AccessToken 확인
         String accessToken = kakaoAuthApiService.getAccessTokenUsingCode(code);
@@ -113,6 +116,11 @@ public class LoginController {
         log.info("session : " + session.getAttribute("email"));
         log.info("session : " + session.getAttribute("access_Token"));
 
+        // 로그인 이력 불러오기
+        List<UserLoginHistoryEntity> userLoginHistoryEntityList = userService.getUserLoginHistoryInfo(email);
+
+        model.addAttribute("email", email);
+        model.addAttribute("userLoginHistory", userLoginHistoryEntityList);
 
         return "hello";
     }
