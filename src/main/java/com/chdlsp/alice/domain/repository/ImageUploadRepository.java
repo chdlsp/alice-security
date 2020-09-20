@@ -9,5 +9,5 @@ import java.util.Optional;
 public interface ImageUploadRepository extends CrudRepository<ImageUploadEntity, Long> {
 
     Optional<ImageUploadEntity> findById(Long id);
-
+    Optional<ImageUploadEntity> findByImageName(String imageName);
 }

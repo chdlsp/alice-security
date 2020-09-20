@@ -27,6 +27,8 @@ com/chdlsp/alice/service/UserService.java
 com/chdlsp/alice/interfaces/vo/KakaoUserInfoVO.java
  com.chdlsp.alice.interfaces.vo.KakaoUserInfoVO
  com.chdlsp.alice.interfaces.vo.KakaoUserInfoVO$KakaoUserInfoVOBuilder
+com/chdlsp/alice/interfaces/exception/ImageNotExistedException.java
+ com.chdlsp.alice.interfaces.exception.ImageNotExistedException
 com/chdlsp/alice/config/FileUploadConfig.java
  com.chdlsp.alice.config.FileUploadConfig
 com/chdlsp/alice/interfaces/util/JwtUtil.java
@@ -68,6 +70,8 @@ com/chdlsp/alice/interfaces/advice/EmailExistedErrorAdvice.java
  com.chdlsp.alice.interfaces.advice.EmailExistedErrorAdvice
 com/chdlsp/alice/controller/FileUploadController.java
  com.chdlsp.alice.controller.FileUploadController
+com/chdlsp/alice/service/FileHandlingService.java
+ com.chdlsp.alice.service.FileHandlingService
 com/chdlsp/alice/interfaces/enums/PropertyKeyEnum.java
  com.chdlsp.alice.interfaces.enums.PropertyKeyEnum
 com/chdlsp/alice/interfaces/exception/AccessTokenProcessException.java

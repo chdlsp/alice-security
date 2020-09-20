@@ -1,7 +1,10 @@
 package com.chdlsp.alice.controller;
 
+import com.chdlsp.alice.domain.entity.ImageUploadEntity;
 import com.chdlsp.alice.interfaces.exception.StorageFileNotFoundException;
+import com.chdlsp.alice.service.FileHandlingService;
 import com.chdlsp.alice.service.FileUploadService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpHeaders;
@@ -15,11 +18,16 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 import java.util.stream.Collectors;
 
 @Controller
 @RequestMapping("/files")
+@Slf4j
 public class FileUploadController {
+
+    @Autowired
+    private FileHandlingService fileHandlingService;
 
     private final FileUploadService fileUploadService;
 
@@ -31,10 +39,11 @@ public class FileUploadController {
     @GetMapping("/")
     public String listUploadedFiles(Model model) throws IOException {
 
-        model.addAttribute("files", fileUploadService.loadAll().map(
+        List<String> serveFile = fileUploadService.loadAll().map(
                 path -> MvcUriComponentsBuilder.fromMethodName(FileUploadController.class,
-                        "serveFile", path.getFileName().toString()).build().toUri().toString())
-                .collect(Collectors.toList()));
+                        "serveFile", path.getFileName().toString()).build().toUri().toString()).collect(Collectors.toList());
+
+        model.addAttribute("files", serveFile);
 
         return "uploadForm";
     }
@@ -63,9 +72,19 @@ public class FileUploadController {
         return "redirect:/files/";
     }
 
+    @GetMapping("/fileName")
+    public ResponseEntity<?> getFileInfoByFileName(@RequestParam("fileName") String fileName) {
+
+        // 이미지 명으로 관련 정보 찾기
+        ImageUploadEntity fileInfo = fileHandlingService.getFileInfo(fileName);
+
+        log.info("fileInfo : " + fileInfo);
+
+        return ResponseEntity.ok().body(fileInfo);
+    }
+
     @ExceptionHandler(StorageFileNotFoundException.class)
     public ResponseEntity<?> handleStorageFileNotFound(StorageFileNotFoundException exc) {
         return ResponseEntity.notFound().build();
     }
-
 }
